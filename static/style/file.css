@@ -1,0 +1,43 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.File {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-shadow: #000 0px 3px 10px 0px;
+    border-radius: 8px;
+    width: 70%;
+}
+
+.File__Name {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.File__Size {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.Button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    background-color: #FFE400;
+    border: #FFE400 2px solid;
+    border-radius: 6px;
+    transition: background-color .2s;
+}
+
+.Button:hover {
+    cursor: pointer;
+    background-color: transparent;
+}

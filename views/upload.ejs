@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="/static/style/upload.css">
+    <script type="text/javascript" src="/static/js/upload.js" defer></script>
+</head>
+<body>
+    <div class="Loader">
+        <div class="Load"></div>
+        <i class="Message">Request a channel for upload</i>
+    </div>
+    <div class="Uploader">
+        <div class="Group">
+            <h2 class="Name">Key</h2>
+            <div class="Input" id="input-key">
+                <input type="text" id="key">
+                <img src="/static/assets/close_FILL0_wght400_GRAD0_opsz40.svg" class="Invalid">
+                <img src="/static/assets/done_FILL0_wght400_GRAD0_opsz40.svg" class="Valid">
+            </div>
+        </div>
+        <div class="Group">
+            <h2 class="Name">File</h2>
+            <label for="file">
+                <div class="Button" id="upload-button">
+                    <i>Choisir un fichier</i>
+                </div>
+            </label>
+            <input type="file" id="file" accept=".zip,.rar">
+        </div>
+        <button class="Upload" id="upload-start">Upload</button>
+    </div>
+</body>
+</html>

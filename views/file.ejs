@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="/static/style/file.css">
+</head>
+<body>
+    <% if (invalid) { %>
+        <h1 class="File">Invalid File</h1>
+    <% } else if (inUpload) { %>
+        <h1 class="File">File is uploading</h1>
+    <% } else { %>
+        <div class="File">
+            <h1 class="File__Name">File: <%- file.name %></h1>
+            <h2 class="File__Size">Size: <%- file.size %> GB</h2>
+            <a href="/dl/<%- id %>" download><button class="Button">Télécharger</button></a>
+        </div>
+    <% } %>
+</body>
+</html>
